@@ -17,9 +17,9 @@ function Title(props) {
         </Col>
         <Col size="md-6">
           <div className="container text-center">
-            <p>
+            <h2>
               Click on every character only once!
-            </p>
+            </h2>
           </div>
         </Col>
         <Col size="md-3">

@@ -2,11 +2,16 @@ h1 {
 margin-top: 1%;
 text-align: center;
 width: 100%;
+font-family: 'Cinzel Decorative', cursive;
 }
 
 .header{
-  background-color: #282c34;
+  background-color: #585245;
   color: white;
   position: relative;
   top: 0;
+}
+
+h2{
+  font-family: 'IM Fell English SC', serif;
 }

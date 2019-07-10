@@ -21,13 +21,7 @@ class CharacterCard extends Component {
         <div className="content">
           <ul>
             <li>
-              <strong>Name:</strong> {this.props.name}
-            </li>
-            <li>
-              <strong>Occupation:</strong> {this.props.occupation}
-            </li>
-            <li>
-              <strong>Location:</strong> {this.props.location}
+              <span className="charName">{this.props.name}</span> - {this.props.occupation}
             </li>
           </ul>
         </div>
