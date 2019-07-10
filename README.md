@@ -8,7 +8,5 @@ Click on every character only once to win the game. Every time you click a chara
 
 ### To do:
   1. Make cards smaller
-  2. Check for responsiveness
-  3. Make title bar static on top to be able to scroll and still see the score
-  4. Change images and style to LOTR characters
+  2. Change images and style to LOTR characters
   
