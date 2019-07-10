@@ -7,4 +7,6 @@ width: 100%;
 .header{
   background-color: #282c34;
   color: white;
+  position: relative;
+  top: 0;
 }
