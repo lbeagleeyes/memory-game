@@ -3,11 +3,8 @@ import CharacterCard from "./components/CharacterCard"
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
 import friends from "./friends.json"
-import { Container, Row, Col } from "./components/Grid";
-
 import "./App.css";
-import ClickStatus from "./components/ClickStatus";
-import Score from "./components/Score";
+
 
 class App extends Component {
 
@@ -64,29 +61,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App-header">
-        <Container>
-          <Row>
-            <Col size="md-3">
-              <ClickStatus value={this.state.status}></ClickStatus>
-            </Col>
-            <Col size="md-6">
-              <Title>
-              </Title>
-            </Col>
-            <Col size="md-3">
-              <Score score={this.state.score} topScore={this.state.topScore}></Score>
-            </Col>
-          </Row>
-        </Container>
-        <div className="App">
+      <React.Fragment>
+          <Title status={this.state.status} score={this.state.score} topScore={this.state.topScore}>
+          </Title>
+
           <Wrapper>
             {this.state.friends.map((character) => {
               return <CharacterCard key={character.id} id={character.id} name={character.name} image={character.image} occupation={character.occupation} location={character.location} handleClick={this.handleClick} />
             })}
           </Wrapper>
-        </div>
-      </div>
+
+
+      </React.Fragment>
     );
   }
 }
